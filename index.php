@@ -12,6 +12,8 @@
 	echo "<h1> Failed to connect <h1>"; 
 	}else {
 	echo "<h1> <img src=images/ansible_bg.png alt='Ansible Automation Platform' width=300 height=100> </h1>";
+	echo "<h2> You are connected to backend application server" . " : " . gethostname();
+        echo " ";
 	}
 	
 	$sql="SELECT username,userpass,usershell,userhome from login where username=\"$_GET[name]\"";
