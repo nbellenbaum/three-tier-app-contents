@@ -3,7 +3,7 @@
 <?php
   $db=mysqli_connect("appdb.example.com","devops","redhat","userdb");
   if (mysqli_connect_errno()){ 
-    echo "<h1> Failed to connect <h1>";}
+    echo "<h1> Failed to connect </h1>";}
   else{
     echo "<h1> <img src=images/ansible_bg.png alt='Ansible Automation Platform' width=300 height=100>";
     echo "You are connected to backend application server" . " : " . gethostname();
