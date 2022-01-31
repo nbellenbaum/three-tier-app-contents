@@ -1,0 +1,14 @@
+  [loadbalancers]
+  frontend.example.com
+
+  [backend_servers]
+  app1.example.com
+  app2.example.com
+
+  [db_servers]
+  appdb.example.com
+
+  [all:vars]
+  ansible_user=cloud-user
+  ansible_password=r3dh4t1!
+  ansible_ssh_private_key_file=~/.ssh/b262key.pem
